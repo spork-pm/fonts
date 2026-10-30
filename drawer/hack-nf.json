@@ -1,0 +1,18 @@
+{
+    "version": "3.5.1",
+    "description": "Hack Nerd Font: a typeface designed for source code, patched with icons",
+    "homepage": "https://www.nerdfonts.com",
+    "license": "MIT AND Bitstream-Vera",
+    "url": "https://github.com/ryanoasis/nerd-fonts/releases/download/v3.5.1/Hack.tar.xz",
+    "hash": "sha256:cdd389472e10e2261520140ff1b382b4f8a226af5fd0b2735b975d31151d9c3c",
+    "font": "*.ttf",
+    "checkver": {
+        "github": "ryanoasis/nerd-fonts"
+    },
+    "autoupdate": {
+        "url": "https://github.com/ryanoasis/nerd-fonts/releases/download/v$version/Hack.tar.xz",
+        "hash": {
+            "url": "$baseurl/SHA-256.txt"
+        }
+    }
+}

@@ -1,0 +1,18 @@
+{
+    "version": "3.5.1",
+    "description": "Cascadia Code Nerd Font (CaskaydiaCove): Microsoft's coding font with ligatures, patched with icons",
+    "homepage": "https://www.nerdfonts.com",
+    "license": "OFL-1.1",
+    "url": "https://github.com/ryanoasis/nerd-fonts/releases/download/v3.5.1/CascadiaCode.tar.xz",
+    "hash": "sha256:ae598e9401e2846aa3ee364513715de0490b844a4b54f0768991f45f23aa8369",
+    "font": "*.ttf",
+    "checkver": {
+        "github": "ryanoasis/nerd-fonts"
+    },
+    "autoupdate": {
+        "url": "https://github.com/ryanoasis/nerd-fonts/releases/download/v$version/CascadiaCode.tar.xz",
+        "hash": {
+            "url": "$baseurl/SHA-256.txt"
+        }
+    }
+}

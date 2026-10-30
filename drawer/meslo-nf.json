@@ -1,0 +1,18 @@
+{
+    "version": "3.5.1",
+    "description": "Meslo Nerd Font: Meslo LG in three line spacings, patched with icons (the font Powerlevel10k recommends)",
+    "homepage": "https://www.nerdfonts.com",
+    "license": "Apache-2.0",
+    "url": "https://github.com/ryanoasis/nerd-fonts/releases/download/v3.5.1/Meslo.tar.xz",
+    "hash": "sha256:6b6624632dc6873dfb7681c3f818e7c01ab601ab707690b6440933bbe57e2b11",
+    "font": "*.ttf",
+    "checkver": {
+        "github": "ryanoasis/nerd-fonts"
+    },
+    "autoupdate": {
+        "url": "https://github.com/ryanoasis/nerd-fonts/releases/download/v$version/Meslo.tar.xz",
+        "hash": {
+            "url": "$baseurl/SHA-256.txt"
+        }
+    }
+}
