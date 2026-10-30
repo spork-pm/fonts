@@ -44,7 +44,24 @@ For a Nerd Font, copy one of the existing `-nf` manifests and change the archive
 `description` and the `license`. The license is the original font's, found in the archive.
 Name the package after the archive, lowercased, with `-nf` appended.
 
-Their `checkver` and `autoupdate` fields let a workflow update them every 6 hours when Nerd Fonts
+```json
+{
+    "version": "3.5.1",
+    "description": "Fira Code Nerd Font: monospaced font with programming ligatures, patched with icons",
+    "homepage": "https://www.nerdfonts.com",
+    "license": "OFL-1.1",
+    "url": "https://github.com/ryanoasis/nerd-fonts/releases/download/v3.5.1/FiraCode.tar.xz",
+    "hash": "sha256:…",
+    "font": "*.ttf",
+    "checkver": {"github": "ryanoasis/nerd-fonts"},
+    "autoupdate": {
+        "url": "https://github.com/ryanoasis/nerd-fonts/releases/download/v$version/FiraCode.tar.xz",
+        "hash": {"url": "$baseurl/SHA-256.txt"}
+    }
+}
+```
+
+With `checkver` and `autoupdate`, a workflow updates the manifests every 6 hours when Nerd Fonts
 publishes a new release. Hashes come from the release's `SHA-256.txt`.
 
 Before opening a pull request:
