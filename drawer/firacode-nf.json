@@ -1,0 +1,18 @@
+{
+    "version": "3.5.1",
+    "description": "Fira Code Nerd Font: monospaced font with programming ligatures, patched with icons",
+    "homepage": "https://www.nerdfonts.com",
+    "license": "OFL-1.1",
+    "url": "https://github.com/ryanoasis/nerd-fonts/releases/download/v3.5.1/FiraCode.tar.xz",
+    "hash": "sha256:68e3bd6164864b8b514605bc34e3a87ac401c8c48682fcce6478c70263340207",
+    "font": "*.ttf",
+    "checkver": {
+        "github": "ryanoasis/nerd-fonts"
+    },
+    "autoupdate": {
+        "url": "https://github.com/ryanoasis/nerd-fonts/releases/download/v$version/FiraCode.tar.xz",
+        "hash": {
+            "url": "$baseurl/SHA-256.txt"
+        }
+    }
+}

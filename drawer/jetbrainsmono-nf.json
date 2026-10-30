@@ -1,0 +1,18 @@
+{
+    "version": "3.5.1",
+    "description": "JetBrains Mono Nerd Font: JetBrains' coding font, with and without ligatures, patched with icons",
+    "homepage": "https://www.nerdfonts.com",
+    "license": "OFL-1.1",
+    "url": "https://github.com/ryanoasis/nerd-fonts/releases/download/v3.5.1/JetBrainsMono.tar.xz",
+    "hash": "sha256:04d5e8f903693f9dd13e16f867e994834e681eb3c72c0d337a770dcda09010cf",
+    "font": "*.ttf",
+    "checkver": {
+        "github": "ryanoasis/nerd-fonts"
+    },
+    "autoupdate": {
+        "url": "https://github.com/ryanoasis/nerd-fonts/releases/download/v$version/JetBrainsMono.tar.xz",
+        "hash": {
+            "url": "$baseurl/SHA-256.txt"
+        }
+    }
+}
